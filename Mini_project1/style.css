@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(231deg,rgba(22,6,40,1) 0%, rgba(52,28,79,1) 50%,rgba(88,7,125,1) 100%) ;
+}
+
+#passwordHeading{
+    color: white;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.2;
+    
+}
+
+
+.generatorPasswordShows{
+    display: flex;
+    padding:10px 20px;
+    background-color: rgb(5, 4, 49);
+    border-bottom: 3px solid blueviolet;
+    border-radius: 10px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.boxOfPassword{
+    background-color: transparent;
+    color:rgb(207, 207, 45);
+    border:none;
+    border-bottom: 0.35 solid violet;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    /* padding: 1.15rem 1rem; */
+}
+
+.boxOfPassword::placeholder{
+    position: absolute;
+    color: yellow;
+    opacity: 65%;
+    text-transform: uppercase;
+    line-height: 30px;
+    
+}
+
+
+.box2{
+    background-color: rgb(5, 4, 49);
+    height: 430px;
+    width: 400px;
+    border-radius: 10px;
+    border-bottom: 3px solid blueviolet;
+}
+
+.copyBtn{
+    background: transparent;
+    color: aqua;
+    border: none;
+}
+
+
+.tootTip{
+    position: absolute;
+    background-color: rgb(59, 83, 83);
+    color:yellow;
+    font-size:1.25rem;
+    top:-35px;
+    left: 335px;
+    padding: 5px 10px;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+}
+
+.tootTip.active{
+    opacity: 1;
+    transform: scale(1);
+}
+.passwordLength{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.passwordLength h4{
+    color: azure;
+    opacity: 80%;
+    font-size: 1.5rem;
+}
+
+.passwordLength div{
+    color: rgb(204, 250, 98);
+    opacity: 80%;
+    font-size: 1.5rem;
+}
+
+.strength-light{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.strength-light p{
+    color: azure;
+    opacity: 80%;
+    font-size: 1.5rem;
+}
+
+
+.strengthLight{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.generatorPassword{
+    width: 80%;
+    text-align: center;
+    padding: 1rem 0;
+    letter-spacing: 1px;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: 4px solid rgb(186, 226, 43);
+    text-transform: uppercase;
+    color:rgb(186, 226, 43); 
+    background-color: blueviolet;
+    transform: translateX(42px) translateY(10px); 
+}
+
+
+.check{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap:0 1rem;
+    padding: 0 15px;
+}
+
+.check input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid green;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.35rem;
+}
+
+.check input:checked{
+    background-color: aquamarine;
+}
+
+.check input:checked::before{
+    content: "✓";
+    position: absolute;
+    color: black;
+    left: 22%;
+    bottom: 0.001rem;
+    font-weight: 900;
+    font-size: 1.03rem;
+}
+
+.check label{
+    color: aliceblue;
+    letter-spacing: 0.75px;
+    font-size: 1.25rem;
+}
+
+.sliderRange{
+    appearance: none;
+    width: 93%;
+    height: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    transform: translateX(15px);
+    background-color: blueviolet;
+    border-radius: 1rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem;
+    background-image: linear-gradient(violet);
+}
+
+
+.sliderRange::-webkit-slider-thumb{
+    position: relative;
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+
+.sliderRange:focus{
+    outline: 3px solid yellow;
+}
+
+.sliderRange::-webkit-slider-thumb:hover{
+    
+    background-color: black;
+    outline: 2px solid yellow;
+    box-shadow: 0 0 25px 5px yellow;
+}
+
+
